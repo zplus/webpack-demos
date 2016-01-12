@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
 
 module.exports = {
   entry: {
@@ -9,6 +10,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin(/* chunkName= */'vendor', /* filename= */'vendor.js')
+    //new webpack.optimize.CommonsChunkPlugin(/* chunkName= */'vendor', /* filename= */'vendor.js')
+    new CommonsChunkPlugin(/* chunkName= */'vendor', /* filename= */'vendor.js')
   ]
 };

@@ -13,6 +13,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new CommonsChunkPlugin('init.js')
+    new CommonsChunkPlugin('index.js')
   ]
 }

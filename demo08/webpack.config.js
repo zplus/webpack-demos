@@ -8,10 +8,10 @@ module.exports = {
   },
   plugins: [
     new HtmlwebpackPlugin({
-      title: 'Webpack-demos'
+      title: 'Webpack-test'
     }),
     new OpenBrowserPlugin({
-      url: 'http://localhost:8080'
+      url: 'http://localhost:3000'
     })
   ]
 };
