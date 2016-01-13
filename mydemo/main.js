@@ -1,4 +1,6 @@
 require('./assets/css/app.css');
+require('./assets/sass/main');
+
 var h1 = document.createElement('h1');
 h1.innerHTML = (__DEV__) ? appCfg.devTitle : appCfg.title;
 document.body.appendChild(h1);
